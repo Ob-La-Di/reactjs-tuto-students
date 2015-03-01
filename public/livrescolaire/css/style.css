@@ -1,0 +1,152 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
+*{
+	margin :0;
+	font-family: "Roboto", sans;
+	font-weight: 400;
+}
+
+html,body{
+	overflow-x:hidden; 
+}
+
+#content
+{
+	width: 900px;
+	margin: 0 auto;
+}
+
+.students table
+{
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+	border-spacing:5px 0;
+}
+
+.students tbody tr
+{
+	height: 30px;
+	background: #f7fbfc;
+	border: 1px solid #eff3f5;
+	-webkit-transition: all 0.1s linear ;
+	-o-transition: all 0.1s linear ;
+	transition: all 0.1s linear ;
+}
+
+.students tbody tr:hover{
+	background-color: #f6f6f6;
+}
+
+.students h1
+{
+	margin:50px 0 10px 0;
+	color:#7190a9;
+}
+
+
+.students-form h2
+{
+	color: #38c4a9;	
+	margin:30px 0 10px 0;
+}
+
+.table-options
+{
+	width:10%;
+}
+
+.students a
+{
+	color:#ff6161;
+	-webkit-transition: all 0.2s  linear;
+	-o-transition: all 0.2s  linear;
+	transition: all 0.2s  linear;
+}
+
+.students a:hover
+{
+	color:red;
+}
+
+.student-row-enter {
+	-webkit-transform: translateX(-50px);
+	-ms-transform: translateX(-50px);
+	-o-transform: translateX(-50px);
+	transform: translateX(-50px);
+  opacity: 0.01;
+  -webkit-transition: opacity .5s ease-in;
+  -o-transition: opacity .5s ease-in;
+  transition: opacity .5s ease-in;
+}
+
+.student-row-enter.student-row-enter-active {
+  opacity: 1;
+}
+
+.student-row-leave {
+	-webkit-transform: translateX(50px);
+	-ms-transform: translateX(50px);
+	-o-transform: translateX(50px);
+	transform: translateX(50px);
+  opacity: 1;
+  -webkit-transition: opacity .5s ease-in;
+  -o-transition: opacity .5s ease-in;
+  transition: opacity .5s ease-in;
+}
+
+.student-row-leave.student-row-leave-active{
+  opacity: 0.01;
+}
+
+.students-form 
+{
+	margin-top: 10px; 
+	padding:10px 0 ;
+/* 
+	background: #f7fbfc;
+	border: 1px solid #eff3f5; */
+
+}
+
+.students-form .student-form-input
+{
+	background: transparent;
+	border:none;
+	border-bottom: 1px solid #cfd2d5;
+
+	width: 100%;
+	height: 20px;
+	font-size: 14px;
+	margin-bottom: 10px;
+	outline: none;
+
+	-webkit-transition: border-bottom-color 0.2s linear;
+	-o-transition: border-bottom-color 0.2s linear;
+	transition: border-bottom-color 0.2s linear;
+}
+
+.students-form .student-form-submit
+{
+	background-color: transparent;
+	border: 1px solid #cfd2d5;
+	color:#4f4f4f;
+	outline: none;
+	padding: 5px;
+}
+
+.students-form .student-form-input:first-child
+{
+	border-radius: 5px 5px 0 0;
+}
+
+.students-form .student-form-input:last-child
+{
+	border-radius: 0 0 5px 5px;
+	margin-bottom: 5px;
+}
+
+.students-form .student-form-input:focus
+{
+	border-bottom-color:#919395;
+}
